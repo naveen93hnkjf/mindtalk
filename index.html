@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MindBridge – You Are Not Alone</title>
+
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="body">
+
+
+<div id="loginBox">
+  <h1>MindBridge </h1>
+  <p class="subtitle">
+    Congratulations on taking the first step toward understanding yourself ✨
+  </p>
+
+  <div id="g_id_onload"
+       data-client_id="313686441010-17aunf9smkb6e0prjs6un5lvp9bbm7ug.apps.googleusercontent.com"
+       data-callback="handleLogin">
+  </div>
+
+  <div class="g_id_signin"></div>
+</div>
+
+
+<div id="app">
+
+  <h2 id="welcome"></h2>
+
+  <div class="thought">
+    🌈 <strong>
+    Every feeling — happy, sad, lonely, or confused — is a message, not a mistake.
+    You are growing, even on days it feels like you’re breaking.
+    </strong>
+  </div>
+
+  <textarea id="userInput" placeholder="Tell me how you feel..."></textarea>
+  <button onclick="respond()">Talk to MindBridge</button>
+
+  <div id="response"></div>
+
+  <button class="trackBtn" onclick="toggleGraph()">Track My Emotions</button>
+
+  <div id="chartBox">
+    <canvas id="emotionChart"></canvas>
+  </div>
+
+  <footer>
+    Designed & Developed by Naveen Kumar © 2026  
+    <br/>All Rights Reserved – MindBridge
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
