@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  transition: background 0.8s ease;
+}
+
+
+#loginBox {
+  margin-top: 120px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+
+#app {
+  display: none;
+  color: #fff;
+}
+
+textarea {
+  width: 80%;
+  height: 80px;
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.thought {
+  margin: 25px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.trackBtn {
+  background: #ffe066;
+  color: #333;
+}
+
+#chartBox {
+  display: none;
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+
+.login-bg {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.app-bg {
+  background: linear-gradient(135deg, #43cea2, #185a9d, #6a11cb);
+}
