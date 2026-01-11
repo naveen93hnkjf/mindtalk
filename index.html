@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>MindBridge – You Are Not Alone</title>
 
-
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-
- 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body class="intro-bg">
 
-
-<div id="loginBox">
-  <h1>MindBridge </h1>
+<!-- NAME PAGE -->
+<div id="nameBox">
+  <h1>MindBridge 🌉</h1>
   <p class="subtitle">
-    Congratulations on taking the first step toward understanding yourself ✨
+    Every feeling matters. Before we begin, tell me your name.
   </p>
 
-  <div id="g_id_onload"
-     data-client_id="313686441010-3oqt9hurlb0d9jp12o7bpl33d7tjr0nt.apps.googleusercontent.com"
-     data-callback="handleLogin">
+  <input type="text" id="username" placeholder="Enter your name">
+  <br>
+  <button onclick="startApp()">Continue</button>
 </div>
 
-
-  <div class="g_id_signin"></div>
-</div>
-
-
+<!-- APP PAGE -->
 <div id="app">
-
   <h2 id="welcome"></h2>
 
   <div class="thought">
-    🌈 <strong>
-    Every feeling — happy, sad, lonely, or confused — is a message, not a mistake.
-    You are growing, even on days it feels like you’re breaking.
+    🌱 <strong>
+    You are not weak for feeling deeply.
+    Every emotion is proof that you are alive, learning, and human.
     </strong>
   </div>
 
   <textarea id="userInput" placeholder="Tell me how you feel..."></textarea>
+  <br>
   <button onclick="respond()">Talk to MindBridge</button>
 
   <div id="response"></div>
@@ -56,9 +46,8 @@
 
   <footer>
     Designed & Developed by Naveen Kumar © 2026  
-    <br/>All Rights Reserved – MindBridge
+    <br>All Rights Reserved – MindBridge
   </footer>
-
 </div>
 
 <script src="script.js"></script>
